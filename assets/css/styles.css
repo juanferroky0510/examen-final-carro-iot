@@ -1,0 +1,67 @@
+body{
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+.control-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.control-btn{
+    height: 90px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.control-btn:hover{
+    transform: scale(1.05);
+}
+
+.stop-btn{
+    grid-column: span 2;
+    height: 100px;
+    font-size: 24px;
+}
+
+.dashboard-container{
+    background: #111827;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.event-card{
+    background: #1f2937;
+    border-left: 5px solid #0d6efd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease;
+}
+
+.event-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event-info{
+    font-size: 15px;
+    color: #d1d5db;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
